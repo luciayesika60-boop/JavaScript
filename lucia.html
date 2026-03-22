@@ -11,32 +11,35 @@
 <body>
     <h1>BIODATA MAHASISWA</h1>
 
-    <table>
-        <tr>
-            <td>
-                <img src="foto.jpeg" alt="Profile Image" width="200" height="300">
-            </td>
-            <td>
-                <h2>Nama : Lucia Yesika Paskalinda</h2>
-                <h3>NIM : 245314020</h3>
-            </td>
-        </tr>
-    </table>
-    <br><br>
+    <div class="profile">
+        <div class="foto">
+            <img src="foto.jpeg" alt="Profile Image" width="200" height="300">
+        </div>
+        <div class="info">
+            <h2>Nama : Lucia Yesika Paskalinda</h2>
+            <h3>NIM : 245314020</h3>
+        </div>
+    </div>
+    <div class="card">
+        <label>Nama :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="nama" placeholder=" "><br><br>
 
-    Nama : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text'
-        id='nama'><br> <br>
-    Jumlah Pilihan : <input type="number" id='jumlahPilihan'> <br><br>
-    <Nav>
-        <table>
-            <tr>
-                <button onclick="pilihan()">OK</button> <br><br>
-            </tr>
-            <tr>
-                <div id="hasil"></div><br><br>
-            </tr>
-        </table>
-    </Nav>
+        <label>Jumlah Pilihan :</label>
+        <input type="number" id="jumlahPilihan" min="1" max="5"><br><br>
+
+        <button id="tAwal">OK</button>
+        <nav>
+            <hr>
+            <br>
+            <div id="areaPilihan"></div><br>
+            <div id="hasil"></div>
+            <div id="emailContainer" style="display: none;">
+                <label>Email :</label>
+                <input type="email" id="email" placeholder="email@domain.com"><br><br>
+                <button id="btnEmail">OK</button>
+            </div>
+        </nav>
+    </div>
     <script src='lucia.js'></script>
 
 

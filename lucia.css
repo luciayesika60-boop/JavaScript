@@ -4,8 +4,34 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+h2 {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  margin: 5px 0;
+}
+h3 {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  margin: 5px 0;
+}
+.profile {
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.foto {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.info {
+  text-align: center;
+  text-align: center;
+}
 .card {
-  background-color: #fff;
+  background-color: lightgrey;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
